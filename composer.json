@@ -2,6 +2,7 @@
     "name": "jbrada/module-admin-order-product-links",
     "type": "magento2-module",
     "description": "Module enables link from admin items list to product edit page.",
+    "license":"MIT",
     "authors": [
         {
             "name": "Jiří Brada",
