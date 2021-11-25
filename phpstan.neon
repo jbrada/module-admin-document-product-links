@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    fileExtensions:
+        - php
+    paths:
+        - .
+    excludePaths:
+    - vendor/*
+
+    bootstrapFiles:
+            - vendor/bitexpert/phpstan-magento/autoload.php
