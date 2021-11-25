@@ -1,5 +1,5 @@
 {
-    "name": "jbrada/module-admin-document-product-links",
+    "name": "jbrada/module-admin-order-product-links",
     "type": "magento2-module",
     "description": "Module enables link from admin items list to product edit page.",
     "authors": [
