@@ -13,7 +13,7 @@
 <h3 align="center">JBrada/AdminOrderProductLinks</h3>
 
   <p align="center">
-    A simple module adds a navigation link between order, shipment, invoice and credit memo items its related products.
+    A simple module adds a navigation link between order, shipment, invoice and credit memo items and its related products.
     <br />
     <br />
     <a href="https://github.com/jbrada/module-admin-order-product-links/issues">Report Bug</a>
@@ -59,6 +59,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
+
 ## Contact
 
 Jiří Brada - jiri@jbrada.cz
@@ -79,7 +80,7 @@ Project Link: [https://github.com/jbrada/module-admin-order-product-links](https
 [issues-shield]: https://img.shields.io/github/issues/jbrada/module-admin-order-product-links.svg?style=for-the-badge
 [issues-url]: https://github.com/jbrada/module-admin-order-product-links/issues
 [license-shield]: https://img.shields.io/github/license/jbrada/module-admin-order-product-links.svg?style=for-the-badge
-[license-url]: https://github.com/jbrada/module-admin-order-product-links/blob/main/LICENSE
+[license-url]: https://github.com/jbrada/module-admin-order-product-links/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jbrada
 [product-screenshot]: images/screenshot.png
