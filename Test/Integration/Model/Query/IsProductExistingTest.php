@@ -1,0 +1,40 @@
+<?php
+declare(strict_types=1);
+
+namespace JBrada\AdminOrderProductLinks\Test\Integration\Model\Query;
+
+use JBrada\AdminOrderProductLinks\Model\Query\IsProductExisting;
+use Magento\Framework\ObjectManagerInterface;
+use Magento\TestFramework\Helper\Bootstrap;
+use PHPUnit\Framework\TestCase;
+use TddWizard\Fixtures\Catalog\ProductBuilder;
+use TddWizard\Fixtures\Catalog\ProductFixture;
+
+class IsProductExistingTest extends TestCase
+{
+    private const NOT_EXISTING_PRODUCT_ID = 9999999999;
+
+    /**
+     * @var IsProductExisting|null
+     */
+    private ?IsProductExisting $isProductExisting = null;
+
+    protected function setUp(): void
+    {
+        $this->isProductExisting = Bootstrap::getObjectManager()->get(IsProductExisting::class);
+    }
+
+    public function testProductExisting()
+    {
+        $product = new ProductFixture(
+            ProductBuilder::aSimpleProduct()->build()
+        );
+
+        $this->assertTrue($this->isProductExisting->query($product->getId()));
+    }
+
+    public function testProductNotExisting()
+    {
+        $this->assertFalse($this->isProductExisting->query(self::NOT_EXISTING_PRODUCT_ID));
+    }
+}
