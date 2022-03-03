@@ -11,6 +11,9 @@ use TddWizard\Fixtures\Catalog\ProductFixture;
 
 class IsProductExistingTest extends TestCase
 {
+    /**
+     * A random high entity_id that does not exist in Magento
+     */
     private const NOT_EXISTING_PRODUCT_ID = 9999999999;
 
     /**
