@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace JBrada\AdminOrderProductLinks\Test\Integration\Model\Query;
 
 use JBrada\AdminOrderProductLinks\Model\Query\IsProductExisting;
-use Magento\Framework\ObjectManagerInterface;
 use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
 use TddWizard\Fixtures\Catalog\ProductBuilder;
