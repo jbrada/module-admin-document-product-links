@@ -15,7 +15,8 @@
         "php": ">=7.4",
         "magento/framework": "^103.0",
         "magento/module-sales": "*",
-        "magento/module-catalog": "*"
+        "magento/module-catalog": "*",
+        "tddwizard/magento2-fixtures": "*"
     },
     "require-dev": {
 	    "magento/magento-coding-standard": "15",
@@ -42,7 +43,7 @@
     },
     "scripts": {
         "phpcs": "vendor/bin/phpcs --ignore=vendor/ --standard=vendor/magento/magento-coding-standard/Magento2 ./",
-        "phpcbf": "vendor/bin/phpcs --ignore=vendor/ --standard=vendor/magento/magento-coding-standard/Magento2 ./",
+        "phpcbf": "vendor/bin/phpcbf --ignore=vendor/ --standard=vendor/magento/magento-coding-standard/Magento2 ./",
         "phpstan": "vendor/bin/phpstan analyze"
     },
     "minimum-stability": "dev",
