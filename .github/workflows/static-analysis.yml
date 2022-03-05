@@ -1,0 +1,38 @@
+name: Magento Coding Standard
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  phpstan:
+    name: PHPStan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: extdn/github-actions-m2/magento-phpstan@master
+        with:
+          composer_name: jbrada/module-admin-order-product-links
+          magento_pre_install_script: .github/workflows/static-analysis/phpstan-pre-install.sh
+
+  coding-standard:
+    name: Magento Coding Standard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Configure PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          tools: composer:v2
+          coverage: xdebug
+          extensions: bcmath, gd
+
+      - name: Install Composer dependencies
+        run: composer install
+
+      - name: Codesniffer
+        run: composer phpcs
