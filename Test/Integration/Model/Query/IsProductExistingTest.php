@@ -26,16 +26,12 @@ class IsProductExistingTest extends TestCase
         $this->isProductExisting = Bootstrap::getObjectManager()->get(IsProductExisting::class);
     }
 
-
+    /**
+     * @magentoDataFixture JBrada_AdminOrderProductLinks::_files/product_simple.php
+     */
     public function testSuccess()
     {
-        $product = new ProductFixture(
-            ProductBuilder::aSimpleProduct()->build()
-        );
-
-        $this->assertTrue($this->isProductExisting->query($product->getId()));
-
-        $product->delete();
+        $this->assertTrue($this->isProductExisting->query(1));
     }
 
     public function testProductNotExisting()

@@ -15,8 +15,7 @@
         "php": ">=7.4",
         "magento/framework": "^103.0",
         "magento/module-sales": "*",
-        "magento/module-catalog": "*",
-        "tddwizard/magento2-fixtures": "^1.1"
+        "magento/module-catalog": "*"
     },
     "require-dev": {
 	    "magento/magento-coding-standard": "15",
