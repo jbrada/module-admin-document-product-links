@@ -1,4 +1,4 @@
-name: ci
+name: Integration Tests
 on:
   pull_request:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   integration-tests:
-    name: Module Integration Tests
+    name: Module Integration Test
     runs-on: ubuntu-latest
     services:
       mysql:
