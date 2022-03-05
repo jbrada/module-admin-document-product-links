@@ -1,4 +1,3 @@
 #!/bin/sh
 
-pwd;
-ls -lha
+composer require --dev tddwizard/magento2-fixtures

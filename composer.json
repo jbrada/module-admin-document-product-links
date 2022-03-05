@@ -15,8 +15,7 @@
         "php": ">=7.4",
         "magento/framework": "^103.0",
         "magento/module-sales": "*",
-        "magento/module-catalog": "*",
-        "tddwizard/magento2-fixtures": "*"
+        "magento/module-catalog": "*"
     },
     "require-dev": {
 	    "magento/magento-coding-standard": "15",
@@ -25,7 +24,8 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-strict-rules": "^1.1",
         "phpcompatibility/php-compatibility": "^9.3",
-        "phpunit/phpunit": "^9"
+        "phpunit/phpunit": "^9",
+        "tddwizard/magento2-fixtures": "*"
     },
     "autoload": {
         "psr-4": {
