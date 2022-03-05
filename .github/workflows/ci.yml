@@ -64,4 +64,4 @@ jobs:
           composer_name: jbrada/module-admin-order-product-links
           composer_version: 2
           ce_version: '2.4.3-p1',
-          magento_pre_install_script:
+          magento_pre_install_script: integration/pre-install.sh
