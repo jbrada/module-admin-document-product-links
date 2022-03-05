@@ -17,9 +17,9 @@ class IsProductExistingTest extends TestCase
     private const NOT_EXISTING_PRODUCT_ID = 9999999999;
 
     /**
-     * @var IsProductExisting|null
+     * @var IsProductExisting|mixed|null 
      */
-    private ?IsProductExisting $isProductExisting = null;
+    private $isProductExisting = null;
 
     protected function setUp(): void
     {
