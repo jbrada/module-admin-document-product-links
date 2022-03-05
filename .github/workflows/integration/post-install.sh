@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rm -rf dev/test/integration/_files/Magento
+rm -rf dev/tests/integration/_files/Magento
