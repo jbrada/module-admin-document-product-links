@@ -33,6 +33,8 @@ class IsProductExistingTest extends TestCase
         );
 
         $this->assertTrue($this->isProductExisting->query($product->getId()));
+
+        $product->rollback();
     }
 
     public function testProductNotExisting()
