@@ -26,6 +26,9 @@ class IsProductExistingTest extends TestCase
         $this->isProductExisting = Bootstrap::getObjectManager()->get(IsProductExisting::class);
     }
 
+    /**
+     * @magentoDbIsolation enabled
+     */
     public function testSuccess()
     {
         $product = new ProductFixture(
@@ -33,8 +36,6 @@ class IsProductExistingTest extends TestCase
         );
 
         $this->assertTrue($this->isProductExisting->query($product->getId()));
-
-        $product->rollback();
     }
 
     public function testProductNotExisting()
