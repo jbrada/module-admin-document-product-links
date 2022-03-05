@@ -28,7 +28,15 @@ class IsProductExistingTest extends TestCase
 
     public function testSuccess()
     {
-        $this->assertTrue(true);
+        $product = new ProductFixture(
+            ProductBuilder::aSimpleProduct()->build()
+        );
+
+        $this->assertTrue($this->isProductExisting->query($product->getId()));
     }
 
+    public function testProductNotExisting()
+    {
+        $this->assertFalse($this->isProductExisting->query(self::NOT_EXISTING_PRODUCT_ID));
+    }
 }
