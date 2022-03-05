@@ -6,35 +6,6 @@ on:
       - "main"
 
 jobs:
-  static-analysis:
-    runs-on: ${{ matrix.operating-system }}
-    strategy:
-      matrix:
-        operating-system: ['ubuntu-latest']
-        php-versions: ['7.4']
-        coveralls: [false]
-        include:
-          - operating-system: 'ubuntu-latest'
-            php-versions: '7.4'
-            coveralls: true
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Configure PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php-versions }}
-          tools: composer:v1
-          coverage: xdebug
-          extensions: bcmath, gd
-
-      - name: Install Composer dependencies
-        run: composer install
-
-      - name: Codesniffer
-        run: composer phpcs
-
   integration-tests:
     name: Magento 2 Integration Tests
     runs-on: ubuntu-latest
@@ -65,3 +36,4 @@ jobs:
           composer_version: 2
           ce_version: '2.4.3-p1'
           magento_pre_install_script: .github/workflows/integration/pre-install.sh
+          magento_post_install_script: .github/workflows/integration/post-install.sh
