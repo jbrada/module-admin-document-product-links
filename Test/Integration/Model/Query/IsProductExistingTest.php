@@ -26,14 +26,22 @@ class IsProductExistingTest extends TestCase
         $this->isProductExisting = Bootstrap::getObjectManager()->get(IsProductExisting::class);
     }
 
+
     public function testSuccess()
     {
+        $product = new ProductFixture(
+            ProductBuilder::aSimpleProduct()->build()
+        );
 
-        $this->assertTrue($this->isProductExisting->query(3333));
+        $this->assertTrue($this->isProductExisting->query($product->getId()));
+
+        $product->delete();
     }
 
     public function testProductNotExisting()
     {
         $this->assertFalse($this->isProductExisting->query(self::NOT_EXISTING_PRODUCT_ID));
     }
+
+
 }
