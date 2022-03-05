@@ -36,4 +36,4 @@ jobs:
           composer_version: 2
           ce_version: '2.4.3-p1'
           magento_pre_install_script: .github/workflows/integration/pre-install.sh
-          magento_post_install_script: .github/workflows/integration/post-install.sh
+          phpunit_file: .github/workflows/integration/phpunit.xml
