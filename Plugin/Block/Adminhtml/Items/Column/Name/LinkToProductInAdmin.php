@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace JBrada\AdminOrderProductLinks\Plugin\Block\Adminhtml\Items\Column\Name;
+namespace JBrada\AdminDocumentProductLinks\Plugin\Block\Adminhtml\Items\Column\Name;
 
-use JBrada\AdminOrderProductLinks\Model\Query\IsProductExisting;
+use JBrada\AdminDocumentProductLinks\Model\Query\IsProductExisting;
 use Magento\Sales\Block\Adminhtml\Items\Column\Name;
 
 class LinkToProductInAdmin

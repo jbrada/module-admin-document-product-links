@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace JBrada\AdminOrderProductLinks\Test\Integration\Model\Query;
+namespace JBrada\AdminDocumentProductLinks\Test\Integration\Model\Query;
 
-use JBrada\AdminOrderProductLinks\Model\Query\IsProductExisting;
+use JBrada\AdminDocumentProductLinks\Model\Query\IsProductExisting;
 use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
 use TddWizard\Fixtures\Catalog\ProductBuilder;
