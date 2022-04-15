@@ -5,6 +5,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'JBrada_AdminOrderProductLinks',
+    'JBrada_AdminDocumentProductLinks',
     __DIR__
 );

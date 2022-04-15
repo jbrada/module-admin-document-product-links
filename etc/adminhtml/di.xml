@@ -3,6 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Sales\Block\Adminhtml\Items\Column\Name">
         <plugin name="jbrada_link_to_product_in_admin_column_name"
-                type="JBrada\AdminOrderProductLinks\Plugin\Block\Adminhtml\Items\Column\Name\LinkToProductInAdmin"/>
+                type="JBrada\AdminDocumentProductLinks\Plugin\Block\Adminhtml\Items\Column\Name\LinkToProductInAdmin"/>
     </type>
 </config>

@@ -31,8 +31,8 @@ jobs:
       - name: M2 Integration Tests with Magento 2 (Php7.4)
         uses: extdn/github-actions-m2/magento-integration-tests/7.4@master
         with:
-          module_name: JBrada_AdminOrderProductLinks
-          composer_name: jbrada/module-admin-order-product-links
+          module_name: JBrada_AdminDocumentProductLinks
+          composer_name: jbrada/module-admin-document-product-links
           composer_version: 2
           ce_version: '2.4.3-p1'
           magento_pre_install_script: .github/workflows/integration/pre-install.sh

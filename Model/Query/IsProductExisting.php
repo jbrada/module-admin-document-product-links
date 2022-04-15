@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace JBrada\AdminOrderProductLinks\Model\Query;
+namespace JBrada\AdminDocumentProductLinks\Model\Query;
 
-use JBrada\AdminOrderProductLinks\Api\IsProductExistingInterface;
+use JBrada\AdminDocumentProductLinks\Api\IsProductExistingInterface;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
 
 class IsProductExisting implements IsProductExistingInterface
