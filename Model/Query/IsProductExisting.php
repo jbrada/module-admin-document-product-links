@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 namespace JBrada\AdminDocumentProductLinks\Model\Query;
 
-use JBrada\AdminDocumentProductLinks\Api\IsProductExistingInterface;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
 
-class IsProductExisting implements IsProductExistingInterface
+class IsProductExisting
 {
     /**
      * Limit for getAllIds function call
