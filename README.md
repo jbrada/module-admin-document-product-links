@@ -1,5 +1,6 @@
 <div id="top"></div>
 
+[![Magento Package Maven](https://package-maven.com/badge/jbrada/module-admin-document-product-links?style=for-the-badge)](https://package-maven.com)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
