@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Magento Package Maven](https://package-maven.com/badge/jbrada/module-admin-document-product-links?style=for-the-badge)](https://package-maven.com)
+[![Magento Package Maven Badge](https://package-maven.com/badge/jbrada/module-admin-document-product-links?style=for-the-badge)](https://package-maven.com/jbrada/module-admin-document-product-links)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
